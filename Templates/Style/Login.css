@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color: Red;
+}
+
+body{
+    height: 100vh;
+    background-color: #ff0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.login{
+    background-color: blue;
+}
+
