@@ -1,22 +1,305 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Mind</title>
-		<link rel="stylesheet" href="./Templates/Style/index.css"/>
-	</head>
-	<body>
-		<header>
-			<nav>
-                <div class="header">
+    <head>
+        <title>Cargo</title>
+        <link rel="stylesheet" href="./Templates/Style/index.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
                 <h1><a href="#">Cargo</a></h1>
-                <input /><button>Search</button>
+                <div class="header">
+                    <div class="search">
+                        <input type="search" placeholder="Search The Products"/><button>Search</button>
+                    </div>
+
                 </div>
-				<ul>
-					<li><a href="./Templates/Login.html">Login</a></li>
-					<li><a href="#">Cart</a></li>
-					<li><a href="#">Orders</a></li>
-				</ul>
-			</nav>
-		</header>
-	</body>
+                <ul>
+                    <li><a href="./Templates/Login.html">Login</a></li>
+                    <li><a href="./Templates/Cart.html">Cart</a></li>
+                    <li><a href="./Templates/order.html">Orders</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+        <section class="main-title">
+            <div class="main-content">
+                <p class="main-small">
+                    Welcome to Cargo
+                </p>
+                <h1>
+                    Everything You Need, <br> Delivered to You
+                </h1>
+                <p>
+                    Discover great products at affordable prices.
+                </p>
+                <button class="shop-button">
+                    Shop Now
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Categories -->
+        <section class="section section-one">
+            <h2>
+                Shop by Category
+            </h2>
+            <div class="category-container cont">
+                <div class="category-card">
+                    <div class="category-image">📱</div>
+                    <h3>Mobiles</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">💻</div>
+                    <h3>Electronics</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">👕</div>
+                    <h3>Fashion</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">🏠</div>
+                    <h3>Home</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">📚</div>
+                    <h3>Books</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">🎧</div>
+                    <h3>Accessories</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Deals -->
+        <section class="section-B section deals">
+            <div class="section-header">
+                <h2>
+                    Today's Deals
+                </h2>
+            </div>
+            <div class="product-container cont container">
+                <!-- Product 1 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        📱
+                    </div>
+                    <h3>
+                        Smartphone
+                    </h3>
+                    <p class="rating">
+                        ★★★★☆ 4.3
+                    </p>
+                    <p class="price">
+                        ₹14,999
+                    </p>
+                    <p class="discount">
+                        20% off
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        💻
+                    </div>
+                    <h3>
+                        Laptop
+                    </h3>
+                    <p class="rating">
+                        ★★★★☆ 4.5
+                    </p>
+                    <p class="price">
+                        ₹49,999
+                    </p>
+                    <p class="discount">
+                        15% off
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        🎧
+                    </div>
+                    <h3>
+                        Wireless Headphones
+                    </h3>
+                    <p class="rating">
+                        ★★★★☆ 4.2
+                    </p>
+                    <p class="price">
+                        ₹1,999
+                    </p>
+                    <p class="discount">
+                        30% off
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        ⌚
+                    </div>
+                    <h3>
+                        Smart Watch
+                    </h3>
+                    <p class="rating">
+                        ★★★★☆ 4.1
+                    </p>
+                    <p class="price">
+                        ₹2,499
+                    </p>
+                    <p class="discount">
+                        25% off
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Products -->
+        <section class="section-B section ">
+            <h2>
+                Recommended for You
+            </h2>
+            <div class="product-container cont container">
+                <div class="product-card">
+                    <div class="product-image">
+                        👟
+                    </div>
+                    <h3>
+                        Running Shoes
+                    </h3>
+                    <p class="rating">
+                        ★★★★★ 4.7
+                    </p>
+                    <p class="price">
+                        ₹1,499
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        🎒
+                    </div>
+                    <h3>
+                        Laptop Backpack
+                    </h3>
+                    <p class="rating">
+                        ★★★★☆ 4.4
+                    </p>
+                    <p class="price">
+                        ₹899
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        ⌨️
+                    </div>
+                    <h3>
+                        Mechanical Keyboard
+                    </h3>
+                    <p class="rating">
+                        ★★★★☆ 4.6
+                    </p>
+                    <p class="price">
+                        ₹2,999
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        🖱️
+                    </div>
+                    <h3>
+                        Wireless Mouse
+                    </h3>
+                    <p class="rating">
+                        ★★★★☆ 4.3
+                    </p>
+                    <p class="price">
+                        ₹699
+                    </p>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-top">
+                <a href="#">
+                    Back to top
+                </a>
+            </div>
+            <div class="footer-content">
+                <div class="f-content-one f-content">
+                    <h3>Get to Know Us</h3>
+                    <a href="#">About Cargo</a><br>
+                    <a href="#">Careers</a><br>
+                    <a href="#">Contact Us</a><br>
+                </div>
+                <div class="f-content-two f-content">
+                    <h3>Make Money with Us</h3>
+                    <a href="#">Sell on Cargo</a><br>
+                    <a href="#">Become a Seller</a><br>
+                    <a href="#">Advertise Your Products</a><br>
+                </div>
+                <div class="f-content-three f-content">
+                    <h3>Customer Service</h3>
+                    <a href="#">Your Account</a><br>
+                    <a href="#">Returns</a><br>
+                    <a href="#">Help</a><br>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <h2>Cargo</h2>
+                <p>
+                © 2026 Cargo. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+    <script src="./Templates/Style/index.css">
+    </script>
 </html>

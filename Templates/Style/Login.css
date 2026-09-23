@@ -1,22 +1,270 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
 }
 
-h1{
-    color: Red;
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #DDDDDD;
+    color: #111;
 }
 
-body{
-    height: 100vh;
-    background-color: #ff0;
+
+/* =========================
+   LOGIN PAGE
+   ========================= */
+
+.login-page {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    background: #AAAAAA;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo {
     text-align: center;
-    flex-direction: column;
+    margin-bottom: 25px;
 }
 
-.login{
-    background-color: blue;
+.logo a {
+    color: #111;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+
+/* =========================
+   TITLE
+   ========================= */
+
+.login-container h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   USER TYPE
+   ========================= */
+
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.role-container {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.role {
+    padding: 11px 5px;
+    border: 1px solid #bbb;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.role:hover {
+    border-color: #111;
+}
+
+.role.active {
+    background: #131921;
+    color: white;
+    border-color: #131921;
+}
+
+
+/* =========================
+   INPUT
+   ========================= */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #111;
+}
+
+
+/* =========================
+   PASSWORD
+   ========================= */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 65px;
+}
+
+#showPassword {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* =========================
+   OPTIONS
+   ========================= */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+   ========================= */
+
+.login-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background: #838383;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background: #222222;
+    color: white;
+}
+
+
+/* =========================
+   MESSAGE
+   ========================= */
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   REGISTER
+   ========================= */
+
+.register {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.register a {
+    color: #007185;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 450px) {
+    .login-container {
+        padding: 25px 20px;
+    }
+
+    .role-container {
+        grid-template-columns: 1fr;
+    }
+
+    .options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+}
